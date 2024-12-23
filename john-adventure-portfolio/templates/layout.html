@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <h1>John - Adventure Traveler</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/experience">Experience</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        {{ template .TemplateName . }}
+    </main>
+    <footer>
+        <p>&copy; 2023 John Doe</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
